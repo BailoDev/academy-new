@@ -7,9 +7,9 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const images = [
-    "/student.png",
-    "/student2.png",
-    "/student.png",
+    "/home/hero-2.png",
+    "/home/hero-1.png",
+    "/home/hero-2.png",
   ]
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative w-full overflow-hidden py-28 sm:py-36 lg:py-30" style={{ backgroundColor: "#F2F8FD" }}>
+    <section className="relative w-full overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 lg:py-28" style={{ backgroundColor: "#F2F8FD" }}>
       {/* Yellow dots pattern - left side */}
       <div className="absolute left-8 top-1/6 grid grid-cols-6 gap-2 opacity-60">
         {Array.from({ length: 36 }).map((_, i) => (
@@ -82,7 +82,7 @@ export default function Hero() {
 
             {/* Main Heading */}
             <div className="relative lg:max-w-5xl">
-              <h1 className="text-balance font-bold leading-snug text-slate-900" style={{ fontSize: 'clamp(3rem, 5vw, 3.4rem)' }}>
+              <h1 className="text-balance font-bold leading-snug text-slate-900" style={{ fontSize: 'clamp(2.75rem, 6vw, 3.4rem)' }}>
                 <span className="block">Unlock Your Potential</span>
                 <span className="block">With Our Cutting-Edge</span>
                 <span className="relative block">
@@ -91,7 +91,7 @@ export default function Hero() {
               </h1>
               
             </div>
-            <p className="text-base text-black">
+            <p className="text-sm sm:text-base text-black">
                 We set out to reinvent education in the digital era. In a world driven by data and technology, we believe in making technical expertise accessible to everyone.</p>
 
             {/* CTA Buttons */}
@@ -109,8 +109,12 @@ export default function Hero() {
 
           {/* Right Column - Image & Stats */}
           <div className="relative flex justify-center lg:justify-end mt-16 lg:mt-0">
+            {/* Decorative circular elements behind the image */}
+            <div className="absolute -left-8 top-20 h-24 w-24 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 opacity-20 blur-xl"></div>
+            <div className="absolute -right-6 top-40 h-32 w-32 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 opacity-20 blur-xl"></div>
+            <div className="absolute bottom-32 left-12 h-20 w-20 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 opacity-20 blur-xl"></div>
 
-            <div className="relative z-10 h-[600px] w-full max-w-md lg:max-w-lg">
+            <div className="relative z-10 h-[550px] sm:h-[600px] lg:h-[650px] w-full max-w-xl sm:max-w-2xl lg:max-w-3xl xl:max-w-4xl lg:mt-12">
               {images.map((src, index) => (
                 <img
                   key={src}

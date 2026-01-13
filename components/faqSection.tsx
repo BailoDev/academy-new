@@ -109,7 +109,7 @@ export default function FAQSection() {
           <div className="lg:sticky lg:top-8 order-first lg:order-last flex items-center justify-center">
             <div className="transition-all duration-500 hover:scale-105">
               <img
-                src="/student.png"
+                src="/home/faq.png"
                 alt="Person with laptop showing enthusiasm"
                 className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
               />
