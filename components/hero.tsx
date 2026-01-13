@@ -114,13 +114,13 @@ export default function Hero() {
             <div className="absolute -right-6 top-40 h-32 w-32 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 opacity-20 blur-xl"></div>
             <div className="absolute bottom-32 left-12 h-20 w-20 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 opacity-20 blur-xl"></div>
 
-            <div className="relative z-10 h-[550px] sm:h-[600px] lg:h-[650px] w-full max-w-xl sm:max-w-2xl lg:max-w-3xl xl:max-w-4xl lg:mt-12">
+            <div className="relative z-10 h-[550px] sm:h-[600px] lg:h-[650px] w-full max-w-xl sm:max-w-2xl lg:max-w-3xl xl:max-w-4xl lg:mt-12 scale-120">
               {images.map((src, index) => (
                 <img
                   key={src}
                   src={src || "/student.png"}
                   alt={`Student ${index + 1}`}
-                  className={`absolute inset-0 h-auto w-full transition-opacity duration-1000 ${
+                  className={`absolute inset-0 h-auto w-full transition-opacity duration-1000 md:mt-6 ${
                     index === currentImageIndex ? "opacity-100" : "opacity-0"
                   }`}
                 />

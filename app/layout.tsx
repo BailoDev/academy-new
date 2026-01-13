@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: "Gomindz Academy - IT Courses & Digital Skills Training",
   description:
     "At Gomindz Academy, we reinvent education in the digital era. Learn cutting-edge IT skills with industry-driven curriculum, expert instructors, and hands-on learning.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/company-logo.webp",
         type: "image/svg+xml",
       },
     ],

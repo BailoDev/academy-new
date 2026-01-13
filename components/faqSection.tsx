@@ -71,7 +71,7 @@ export default function FAQSection() {
         <div className="absolute bottom-32 left-20 w-16 h-16 bg-yellow-100 rounded-full blur-2xl opacity-40 animate-pulse" style={{ animationDelay: '100ms' }} />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-0">
+          <div className="space-y-0 lg:space-y-5 md:space-y-5">
             {faqData.map((faq, index) => (
               <div
                 key={index}
@@ -107,9 +107,9 @@ export default function FAQSection() {
           </div>
 
           <div className="lg:sticky lg:top-8 order-first lg:order-last flex items-center justify-center">
-            <div className="transition-all duration-500 hover:scale-105">
+            <div className="transition-all pt-0 scale-115 duration-500 hover:scale-105">
               <img
-                src="/home/faq.png"
+                src="/home/faq1.png"
                 alt="Person with laptop showing enthusiasm"
                 className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
               />

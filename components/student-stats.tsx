@@ -8,7 +8,7 @@ export default function StudentStats() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Student Image with Decorative Elements */}
-          <div className="relative flex justify-center lg:justify-start">
+          <div className="relative flex justify-center lg:justify-center">
             {/* Decorative Elements */}
             <div className="absolute top-10 left-10 animate-float">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg transform -rotate-12 flex items-center justify-center">
@@ -37,9 +37,9 @@ export default function StudentStats() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-yellow-400 rounded-full -z-10"></div>
 
             {/* Student Image */}
-            <div className="relative z-10">
+            <div className="relative z-10 md:scale-110">
               <Image
-                src="/student.png"
+                src="/home/whyUs1.png"
                 alt="Student with laptop"
                 width={450}
                 height={500}
