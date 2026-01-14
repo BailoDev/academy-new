@@ -43,7 +43,7 @@ export default function FAQSection() {
       <div 
         className="absolute inset-0 z-0 opacity-40"
         style={{
-          backgroundImage: 'url(https://image.shutterstock.com/image-photo/white-abstract-geometric-background-perspective-600nw-754506505.jpg)',
+          // backgroundImage: '/card2.webp',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -109,7 +109,7 @@ export default function FAQSection() {
           <div className="lg:sticky lg:top-8 order-first lg:order-last flex items-center justify-center">
             <div className="transition-all pt-0 scale-115 duration-500 hover:scale-105">
               <img
-                src="/home/faq1.png"
+                src="/faq.png"
                 alt="Person with laptop showing enthusiasm"
                 className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
               />

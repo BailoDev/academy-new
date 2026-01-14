@@ -6,10 +6,8 @@ export default function Partners() {
       {/* Decorative robot icon - bottom left */}
       <div className="absolute bottom-8 left-8 hidden lg:block">
         <div className="w-20 h-20 relative opacity-80">
-          <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
-            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
+          <div className="w-full h-full flex items-center justify-center">
+            <img src="/icons/laptop.png" alt="" />
           </div>
         </div>
       </div>
@@ -17,10 +15,10 @@ export default function Partners() {
       {/* Decorative chat icons - bottom right */}
       <div className="absolute bottom-8 right-8 hidden lg:block">
         <div className="relative">
-          <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center text-white text-2xl mb-2">
+          <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center text-white text-2xl mb-2">
             💬
           </div>
-          <div className="w-14 h-14 bg-purple-500 rounded-full flex items-center justify-center text-white text-xl absolute -bottom-4 left-8">
+          <div className="w-14 h-14 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl absolute -bottom-4 left-8">
             💬
           </div>
         </div>

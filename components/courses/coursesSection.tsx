@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 
 interface Course {
@@ -237,6 +236,110 @@ const courses: Course[] = [
     isFree: false,
     image: '/photography.jpg',
     level: 'Corporate Training'
+  },
+  {
+    id: 18,
+    category: 'ANALYTICS',
+    title: 'Advanced Data Analytics Techniques',
+    courseName: 'Adv Data Analytics',
+    duration: '12 Weeks',
+    daysPerWeek: '3days/Week',
+    originalPrice: 12000,
+    currentPrice: 10000,
+    isFree: false,
+    image: '/courses/advanced-analytics.webp',
+    level: 'Advanced'
+  },
+  {
+    id: 19,
+    category: 'DATA SCIENCE',
+    title: 'Advanced Data Science Methods',
+    courseName: 'Adv Data Science',
+    duration: '12 Weeks',
+    daysPerWeek: '3days/Week',
+    originalPrice: 12000,
+    currentPrice: 10000,
+    isFree: false,
+    image: '/courses/data-science.jpg',
+    level: 'Advanced'
+  },
+  {
+    id: 20,
+    category: 'MARKETING',
+    title: 'Advanced Digital Marketing Strategies',
+    courseName: 'Adv Digital Marketing',
+    duration: '12 Weeks',
+    daysPerWeek: '3days/Week',
+    originalPrice: 12000,
+    currentPrice: 10000,
+    isFree: false,
+    image: '/courses/digital-marketing-adv.jpg',
+    level: 'Advanced'
+  },
+  {
+    id: 21,
+    category: 'DESIGN',
+    title: 'Advanced Graphic Design Mastery',
+    courseName: 'Adv Graphic Design',
+    duration: '12 Weeks',
+    daysPerWeek: '3days/Week',
+    originalPrice: 12000,
+    currentPrice: 10000,
+    isFree: false,
+    image: '/courses/graphic-design-adv.jpg',
+    level: 'Advanced'
+  },
+  {
+    id: 22,
+    category: 'SECURITY',
+    title: 'Intermediate Cybersecurity Practices',
+    courseName: 'Int Cyber Security',
+    duration: '12 Weeks',
+    daysPerWeek: '2days/Week',
+    originalPrice: 10000,
+    currentPrice: 8000,
+    isFree: false,
+    image: '/courses/cyber-security-int.jpg',
+    level: 'Intermediate'
+  },
+  {
+    id: 23,
+    category: 'SECURITY',
+    title: 'Advanced Cybersecurity & Threat Detection',
+    courseName: 'Adv Cyber Security',
+    duration: '12 Weeks',
+    daysPerWeek: '3days/Week',
+    originalPrice: 12000,
+    currentPrice: 10000,
+    isFree: false,
+    image: '/courses/cyber-security-adv.jpg',
+    level: 'Advanced'
+  },
+  {
+    id: 24,
+    category: 'MARKETING',
+    title: 'Intermediate Digital Marketing Tactics',
+    courseName: 'Int Digital Marketing',
+    duration: '12 Weeks',
+    daysPerWeek: '2days/Week',
+    originalPrice: 10000,
+    currentPrice: 8000,
+    isFree: false,
+    image: '/courses/digital-marketing-int.jpg',
+    level: 'Intermediate'
+  },
+  {
+    id: 25,
+    category: 'DESIGN',
+    title: 'Intermediate Graphic Design Skills',
+    courseName: 'Int Graphic Design',
+    duration: '12 Weeks',
+    daysPerWeek: '2days/Week',
+    originalPrice: 10000,
+    currentPrice: 8000,
+    isFree: false,
+    image: '/courses/graphic-design-int.jpg',
+    level: 'Intermediate'
   }
 ];
 
@@ -244,80 +347,113 @@ const filters = ['All', 'Foundation', 'Intermediate', 'Advanced', 'Corporate Tra
 
 export default function CoursesSection() {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredCourses = activeFilter === 'All' 
-    ? courses 
-    : courses.filter(course => course.level === activeFilter);
+  const filteredCourses = courses.filter(course => {
+    const matchesLevel = activeFilter === 'All' || course.level === activeFilter;
+    const matchesSearch = searchQuery === '' || 
+      course.courseName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.title.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesLevel && matchesSearch;
+  });
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8 font-sans">
-      {/* Filter Tabs */}
-      <div className="flex justify-center gap-2 mb-8 flex-wrap">
-        {filters.map((filter) => (
-          <button
-            key={filter}
-            onClick={() => setActiveFilter(filter)}
-            className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ease-in-out ${
-              activeFilter === filter
-                ? 'bg-gray-200 text-gray-900'
-                : 'bg-white text-gray-600 hover:bg-gray-100'
-            }`}
-          >
-            {filter}
-          </button>
-        ))}
-      </div>
-
-      {/* Courses Grid - 4 columns on both laptop and large screens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {filteredCourses.map((course) => (
-          <div
-            key={course.id}
-            className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col p-4"
-          >
-            {/* Course Image */}
-            <div className="relative h-48 rounded-xl mb-4 overflow-hidden bg-gray-100">
-              <img 
-                src={course.image} 
-                alt={course.courseName}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Course Content */}
-            <div className="px-2 flex flex-col flex-grow">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                {course.courseName}
-              </h3>
-
-              {/* Duration */}
-              <div className="text-sm text-gray-700 mb-2">
-                <span className="font-semibold">Duration:</span> {course.duration} <span className="font-normal">{course.daysPerWeek}</span>
-              </div>
-
-              {/* Fees */}
-              <div className="text-sm text-gray-700 mb-6 flex items-center gap-2">
-                <span className="font-semibold">Fees:</span>
-                {course.originalPrice && (
-                  <span className="text-gray-400 line-through">
-                    D{course.originalPrice.toLocaleString()}
-                  </span>
-                )}
-                <span className="text-blue-600 font-bold text-lg">
-                  D{course.currentPrice.toLocaleString()}
-                </span>
-              </div>
-
-              {/* Course Overview Link */}
-              <a
-                href="#"
-                className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors duration-300 mt-auto"
-              >
-                Course Overview
-              </a>
-            </div>
+    <div className="w-full py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Filter Tabs and Search Bar */}
+        <div className="flex items-center justify-between gap-4 mb-8">
+          <div className="flex gap-4 overflow-x-auto pb-2">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap ${
+                activeFilter === filter
+                  ? 'bg-gray-200 text-gray-900'
+                  : 'bg-white text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
           </div>
-        ))}
+          
+          {/* Search Bar */}
+          <div className="relative w-64 flex-shrink-0">
+            <input
+              type="text"
+              placeholder="Search courses..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-4 py-2.5 pl-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+            />
+            <svg
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* Courses Grid - 4 columns on both laptop and large screens */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {filteredCourses.map((course) => (
+            <div
+              key={course.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            >
+              {/* Course Image */}
+              <div className="relative h-48 bg-gray-200">
+                <img
+                  src={course.image}
+                  alt={course.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Course Content */}
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                  {course.courseName}
+                </h3>
+
+                {/* Duration */}
+                <div className="text-sm text-gray-600 mb-3">
+                  <p>Duration: {course.duration}</p>
+                  <p>{course.daysPerWeek}</p>
+                </div>
+
+                {/* Fees */}
+                <div className="mb-4">
+                  <p className="text-sm text-gray-600">Fees:</p>
+                  <div className="flex items-center gap-2">
+                    {course.originalPrice && (
+                      <span className="text-sm text-gray-400 line-through">
+                        D{course.originalPrice.toLocaleString()}
+                      </span>
+                    )}
+                    <span className="text-lg font-bold text-green-600">
+                      D{course.currentPrice.toLocaleString()}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Course Overview Link */}
+                <a href="#" className="text-blue-600 hover:underline text-sm">
+                  Course Overview
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

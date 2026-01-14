@@ -68,7 +68,7 @@ export default function FeatureCards() {
           <div className="absolute bottom-0 right-0 w-56 h-36 md:w-72 md:h-44 lg:w-80 lg:h-48">
             <div className="relative w-full h-full transform -rotate-6 translate-x-4 md:translate-x-6 translate-y-2 md:translate-y-3">
               <img
-                src="/abt-sub-img.jpg"
+                src="/card2.webp"
                 alt="Teacher presenting"
                 className="w-full h-full rounded-lg shadow-2xl object-cover"
               />
@@ -134,7 +134,7 @@ export default function FeatureCards() {
           <div className="absolute bottom-0 right-0 w-56 h-36 md:w-72 md:h-44 lg:w-80 lg:h-48">
             <div className="relative w-full h-full transform rotate-6 translate-x-4 md:translate-x-6 translate-y-2 md:translate-y-3">
               <img
-                src="/card-1.webp"
+                src="/card1.jpg"
                 alt="Students learning"
                 className="w-full h-full rounded-lg shadow-2xl object-cover"
               />

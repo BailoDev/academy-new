@@ -7,9 +7,9 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const images = [
-    "/home/hero-2.png",
-    "/home/hero-1.png",
-    "/home/hero-2.png",
+    "/hero2.png",
+    "/hero1.png",
+    "/hero2.png",
   ]
 
   useEffect(() => {
@@ -77,7 +77,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="flex items-center gap-2 text-sm sm:text-base">
               <Zap className="h-5 w-5 fill-blue-900 text-blue-900" />
-              <span className="font-medium text-gray-900">Learn From 20,000+ Quality Courses</span>
+              <span className="font-medium text-gray-900">Learn From 10+ Quality Courses</span>
             </div>
 
             {/* Main Heading */}
@@ -98,10 +98,10 @@ export default function Hero() {
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap gap-4">
                 <button className="rounded-md px-8 py-2.5 text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl" style={{ backgroundColor: '#0154A1' }}>
-                  Buy Form
+                  <a href="https://checkout.modempay.com/pay/ccdf350247c0922436490031fd51ca0548987d06d301bd14df320f5d6b606513">Buy Form</a>
                 </button>
                 <button className="rounded-md border-2 px-8 py-2.5 text-base font-semibold shadow-lg transition-all hover:bg-blue-50 hover:shadow-xl" style={{ borderColor: '#0154A1', color: '#0154A1' }}>
-                  Pay Tuition Fee
+                  <a href="https://checkout.modempay.com/pay/155a6261ba24a67175c3de814c0d467b84a46f466c38bdaa0eb5b5cf094cc1cd">Pay Tution Fee</a>
                 </button>
               </div>
             </div>
@@ -130,23 +130,23 @@ export default function Hero() {
               <div className="absolute left-1/2 top-[55%] z-20 -translate-x-1/2 rounded-2xl bg-white p-6 shadow-2xl">
                 <div className="mb-3 flex items-center -space-x-3">
                   <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white bg-orange-200">
-                    <img src="/student.png" alt="Student 1" className="h-full w-full object-cover" />
+                    <img src="/Halima.webp" alt="Student 1" className="h-full w-full object-cover" />
                   </div>
                   <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white bg-blue-200">
-                    <img src="/student.png" alt="Student 2" className="h-full w-full object-cover" />
+                    <img src="/fatouSecka.webp" alt="Student 2" className="h-full w-full object-cover" />
                   </div>
                   <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white bg-pink-200">
-                    <img src="/student.png" alt="Student 3" className="h-full w-full object-cover" />
+                    <img src="/Jonas.webp" alt="Student 3" className="h-full w-full object-cover" />
                   </div>
                   <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white bg-teal-200">
-                    <img src="/student.png" alt="Student 4" className="h-full w-full object-cover" />
+                    <img src="/Halima.webp" alt="Student 4" className="h-full w-full object-cover" />
                   </div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-orange-400 text-sm font-bold text-white">
-                    2K+
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-blue-400 text-sm font-bold text-white">
+                    1K+
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-slate-900">1000+</div>
+                  <div className="text-2xl font-bold text-slate-900">1K+</div>
                   <div className="text-sm text-gray-600">Total Enrolled Students</div>
                 </div>
               </div>

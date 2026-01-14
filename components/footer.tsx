@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-blue-400 text-xs mb-1">Call us at</p>
-                <p className="text-white font-semibold">+220 5293353</p>
+                <p className="text-white font-semibold">+220 5184402</p>
               </div>
             </div>
           </div>
@@ -56,26 +56,26 @@ export default function Footer() {
 
           {/* Informations */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-6">Informations</h3>
+            <h3 className="text-white font-semibold text-lg mb-6">Courses</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/tutorials" className="text-gray-300 hover:text-blue-400  transition-colors">
-                  Tutorials
+                <Link href="/courses" className="text-gray-300 hover:text-blue-400  transition-colors">
+                  Data Literacy
                 </Link>
               </li>
               <li>
-                <Link href="/documentation" className="text-gray-300 hover:text-blue-400  transition-colors">
-                  Documentation
+                <Link href="/courses" className="text-gray-300 hover:text-blue-400  transition-colors">
+                  Digital Technolgy
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-blue-400  transition-colors">
-                  Privacy Policy
+                <Link href="/courses" className="text-gray-300 hover:text-blue-400  transition-colors">
+                  Data Analytics
                 </Link>
               </li>
               <li>
-                <Link href="/faqs" className="text-gray-300 hover:text-blue-400  transition-colors">
-                  FAQs
+                <Link href="/courses" className="text-gray-300 hover:text-blue-400  transition-colors">
+                  Cyber security
                 </Link>
               </li>
             </ul>
@@ -95,7 +95,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <i className="bx bx-phone text-blue-500 text-xl mt-1"></i>
                 <div>
-                  <p className="text-gray-300 text-sm">+220 5293353</p>
+                  <p className="text-gray-300 text-sm">+220 5184402</p>
                   <p className="text-gray-300 text-sm">+220 3696325</p>
                 </div>
               </div>

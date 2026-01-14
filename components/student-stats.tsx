@@ -11,18 +11,18 @@ export default function StudentStats() {
           <div className="relative flex justify-center lg:justify-center">
             {/* Decorative Elements */}
             <div className="absolute top-10 left-10 animate-float">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg transform -rotate-12 flex items-center justify-center">
-                <i className="bx bxs-graduation text-white text-3xl"></i>
+              <div className="w-16 h-16 flex items-center justify-center">
+                <img src="/icons/lap.png" alt="" />
               </div>
             </div>
 
             <div
-              className="absolute top-1/3 -left-4 w-20 h-20 bg-orange-500 rounded-full animate-float"
+              className="absolute top-1/3 -left-4 w-20 h-20 bg-blue-300 rounded-full animate-float"
               style={{ animationDelay: "0.5s" }}
             ></div>
 
             <div
-              className="absolute bottom-1/4 left-0 w-12 h-12 border-4 border-orange-400 rounded-full animate-float"
+              className="absolute bottom-1/4 left-0 w-12 h-12 border-4 border-blue-200 rounded-full animate-float"
               style={{ animationDelay: "1s" }}
             ></div>
 
@@ -39,7 +39,7 @@ export default function StudentStats() {
             {/* Student Image */}
             <div className="relative z-10 md:scale-110">
               <Image
-                src="/home/whyUs1.png"
+                src="/whyUs.png"
                 alt="Student with laptop"
                 width={450}
                 height={500}

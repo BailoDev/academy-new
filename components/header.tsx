@@ -31,15 +31,12 @@ export default function Header() {
         <nav className="h-16 flex justify-between items-center mx-4 lg:mx-[8vw] max-w-[1600px] 2xl:mx-auto">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/gomindz-academy-logo.jpg"
+              src="/company-logo.webp"
               alt="company-logo"
-              width={40}
-              height={40}
-              className="w-10 rounded-full"
+              width={50}
+              height={50}
+              className="w-11 rounded-full"
             />
-            <span className={`font-semibold text-lg transition-colors ${scrolled ? "text-white" : "text-[#0154A1]"}`}>
-              Gomindz App
-            </span>
           </Link>
 
           <div className="hidden md:block">
