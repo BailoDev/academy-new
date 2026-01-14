@@ -24,10 +24,10 @@ export default function CTA() {
               </div>
 
               {/* Tilted card with student */}
-              <div className="relative bg-gradient-to-br from-yellow-400 to-orange-400 rounded-3xl p-6 sm:p-8 transform -rotate-6 shadow-2xl">
+              <div className="relative rounded-3xl p-6 sm:p-8 transform -rotate-6 shadow-2xl">
                 <div className="transform rotate-6">
                   <Image
-                    src="/happy-student-with-glasses-giving-peace-sign-weari.jpg"
+                    src="/cta1.webp"
                     alt="Student with laptop"
                     width={320}
                     height={400}
@@ -69,10 +69,10 @@ export default function CTA() {
               </svg>
 
               {/* Tilted card with student */}
-              <div className="relative bg-gradient-to-br from-purple-300 to-purple-400 rounded-3xl p-6 sm:p-8 transform rotate-6 shadow-2xl">
+              <div className="relative rounded-3xl p-6 sm:p-8 transform rotate-8 shadow-2xl">
                 <div className="transform -rotate-6">
                   <Image
-                    src="/smiling-student-with-backpack-holding-colorful-boo.jpg"
+                    src="/cta.webp"
                     alt="Student with books"
                     width={320}
                     height={400}

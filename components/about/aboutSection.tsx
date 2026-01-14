@@ -32,14 +32,14 @@ export default function AboutSection() {
               {/* Main large image */}
               <div className="relative w-full max-w-md mx-auto lg:mx-0">
                 <div className="aspect-[3/4] relative rounded-lg overflow-hidden shadow-xl">
-                  <Image src="/sem-6.jpg" alt="Student with headphones" fill className="object-cover" />
+                  <Image src="/abt.jpg" alt="Student with headphones" fill className="object-cover" />
                 </div>
               </div>
 
               {/* Overlapping smaller image */}
               <div className="absolute bottom-8 right-4 md:bottom-12 md:right-8 lg:bottom-16 lg:right-12 w-48 md:w-56 lg:w-64 z-20">
                 <div className="aspect-[4/3] relative rounded-lg overflow-hidden shadow-2xl border-4 border-white">
-                  <Image src="/abt-sub-img.jpg" alt="Student studying" fill className="object-cover" />
+                  <Image src="/abt.webp" alt="Student studying" fill className="object-cover" />
                 </div>
               </div>
             </div>

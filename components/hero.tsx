@@ -56,7 +56,7 @@ export default function Hero() {
       </svg>
 
       {/* Orange circle - bottom right */}
-      <div className="absolute bottom-24 right-12 h-16 w-16 rounded-full border-4 border-orange-400" />
+      <div className="absolute bottom-24 right-12 h-16 w-16 rounded-full border-4 border-blue-200" />
 
       {/* Semi-circular SVG at the bottom */}
       <svg

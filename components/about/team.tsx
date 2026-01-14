@@ -7,9 +7,8 @@ const instructors = [
   {
     name: "Fatoumatta Badjie",
     role: "Director",
-    image: "/professional-male-instructor-with-beard-in-chemist.jpg",
+    image: "/staff/badjie.webp",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
@@ -18,9 +17,8 @@ const instructors = [
   {
     name: "Aji Awa Bittaye",
     role: "Marketing",
-    image: "/young-male-instructor-with-glasses-in-classroom.jpg",
+    image: "/staff/aji.webp",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
@@ -29,9 +27,8 @@ const instructors = [
   {
     name: "Ebrima Konteh",
     role: "Graphic Design",
-    image: "/mature-male-instructor-with-gray-beard-and-glasses.jpg",
+    image: "/staff/konteh.webp",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
@@ -42,7 +39,6 @@ const instructors = [
     role: "Lead Instructor",
     image: "/young-male-instructor-with-pencil-in-bright-office.jpg",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
@@ -51,9 +47,8 @@ const instructors = [
   {
     name: "Muhammed Jawo",
     role: "Instructor Digital Technology",
-    image: "/mature-male-instructor-with-glasses-in-suit-with-a.jpg",
+    image: "/staff/jawo.webp",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
@@ -62,9 +57,8 @@ const instructors = [
   {
     name: "Amadou Bailo Bah",
     role: "Instructor Data Analytics",
-    image: "/male-instructor-with-glasses-smiling-outdoors.jpg",
+    image: "/staff/bailo.webp",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
@@ -84,7 +78,7 @@ const instructors = [
   {
     name: "Fatoumatta Danso",
     role: "Instructor Data Science",
-    image: "/male-instructor-in-suit-at-blackboard-with-equatio.jpg",
+    image: "/staff/danso.webp",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -95,9 +89,8 @@ const instructors = [
   {
     name: "Ndey Sambou",
     role: "Instructor Data Science",
-    image: "/professional-male-instructor-with-beard-in-chemist.jpg",
+    image: "/staff/Ndey.webp",
     socials: {
-      facebook: "#",
       twitter: "#",
       linkedin: "#",
       instagram: "#",
